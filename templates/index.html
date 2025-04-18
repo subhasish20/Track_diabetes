@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Diabetes</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <u style="color:white;"><h1>Track Diabetes</h1></u>
+        <form id="diabetesForm" method="post" action="/predict">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="0" max="120" required>
+
+            <label for="hypertension">Hypertension:</label>
+            <select id="hypertension" name="hypertension" required>
+                <option value="">Select</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <label for="heart_disease">Heart Disease:</label>
+            <select id="heart_disease" name="heart_disease" required>
+                <option value="">Select</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+
+            <label for="smoking_history">Smoking History:</label>
+            <select id="smoking_history" name="smoking_history" required>
+                <option value="">Select</option>
+                <option value="never">Never</option>
+                <option value="No Info">No Info</option>
+                <option value="former">Former</option>
+                <option value="current">Current</option>
+                <option value="not current">Not Current</option>
+                <option value="ever">Ever</option>
+            </select>
+
+            <label for="bmi">BMI:</label>
+            <input type="number" id="bmi" name="bmi" step="0.1" min="10" max="90" required>
+
+            <label for="hba1c">Hemoglobin Level (%):</label>
+            <input type="number" id="hba1c" name="hba1c" step="0.1" min="1" max="15" required>
+
+            <label for="glucose">Blood Glucose Level (mg/dL):</label>
+            <input type="number" id="glucose" name="glucose" step="0.1" min="10" max="300" required>
+
+            <button type="submit">Check</button>
+        </form>
+        <div id="result"></div>
+    </div>
+</body>
+</html>

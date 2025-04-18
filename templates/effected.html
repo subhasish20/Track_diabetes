@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction Result</title>
+    <link rel="stylesheet" href="/static/output.css">
+</head>
+<body>
+    <div class="result-container">
+        <u style="color:white"><h2 style="color:white">Here is  your result</h2></u>
+        <ul>
+            <li>Gender: {{ data['gender'] }}</li>
+            <li>Age: {{ data['age'] }}</li>
+            <li>Hypertension: {{ data['hypertension'] }}</li>
+            <li>Heart Disease: {{ data['heart_disease'] }}</li>
+            <li>Smoking History: {{ data['smoking_history'] }}</li>
+            <li>BMI: {{ data['bmi'] }}</li>
+            <li>HbA1c Level: {{ data['HbA1c_level'] }}</li>
+            <li>Blood Glucose Level: {{ data['blood_glucose_level'] }}</li>
+            <li style="font-size: 1.1em;color:yellow;">Diabetes detected According to your given data</li>
+            <u style="color:red;" ><li style="font-size: 1.1em;color:red"> Follow the given instruction for healthy life</li></u>
+            <li style="color:white;font-size:0.9em">
+                1. Monitor Blood Sugar Regularly<br>
+                2. Follow a Balanced, Low-Sugar Diet<br>
+                3. Exercise Regularly<br>
+                4. Stay Hydrated<br>
+                5. Take Medications as Prescribed<br>
+                6. Limit Processed Foods & Sugars<br>
+                7. Manage Stress<br>
+                8. Get Quality Sleep<br>
+                9. Take Care of Your Feet<br>
+                10. Attend Regular Check-Ups<br>
+            </li>
+            <h3 style="color:white">Thank You Visit Again 💐</h3>
+
+        </ul>
+        <a href="/">Go Back</a>
+    </div>
+
+</body>
+</html>

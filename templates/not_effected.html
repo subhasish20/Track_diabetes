@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction Result</title>
+    <link rel="stylesheet" href="/static/output.css">
+</head>
+<body>
+    <div class="result-container">
+        <u style="color:white"><h1 style="color:white">Here is  your details</h1></u>
+        <ul>
+            <li>Gender: {{ data['gender'] }}</li>
+            <li>Age: {{ data['age'] }}</li>
+            <li>Hypertension: {{ data['hypertension'] }}</li>
+            <li>Heart Disease: {{ data['heart_disease'] }}</li>
+            <li>Smoking History: {{ data['smoking_history'] }}</li>
+            <li>BMI: {{ data['bmi'] }}</li>
+            <li>HbA1c Level: {{ data['HbA1c_level'] }}</li>
+            <li>Blood Glucose Level: {{ data['blood_glucose_level'] }}</li>
+            <h2 style="color:white;">No Signs of Diabetes❤️</h2>
+            <h2 style="color:white;">Thank you visit again 💐</h2>
+        </ul>
+        <a href="/">Go Back</a>
+    </div>
+</body>
+</html>

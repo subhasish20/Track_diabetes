@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result - Track Diabetes</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Submitted Details</h1>
+        <ul style="color:white; list-style-type:none; padding:0;">
+            <li><strong>Gender:</strong> {{ data.gender }}</li>
+            <li><strong>Age:</strong> {{ data.age }}</li>
+            <li><strong>Hypertension:</strong> {{ data.hypertension }}</li>
+            <li><strong>Heart Disease:</strong> {{ data.heart_disease }}</li>
+            <li><strong>Smoking History:</strong> {{ data.smoking_history }}</li>
+            <li><strong>BMI:</strong> {{ data.bmi }}</li>
+            <li><strong>HbA1c Level:</strong> {{ data.hba1c }}</li>
+            <li><strong>Blood Glucose Level:</strong> {{ data.glucose }}</li>
+        </ul>
+        <a href="/" style="color:#fff; text-decoration:underline;">Go Back</a>
+    </div>
+</body>
+</html>
