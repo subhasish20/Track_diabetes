@@ -1,7 +1,7 @@
 # Track-diabetes
 
 
-### **Track-diabetes Detection Using Machine Learning**
+### **Track-diabetes Using Machine Learning**
 
 This project leverages machine learning techniques to predict and diagnose diabetes based on various patient health metrics. By analyzing key features such as age, BMI, blood pressure, glucose levels, and family history, the model classifies individuals into two categories: **diabetic** or **non-diabetic**.
 
