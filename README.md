@@ -1,9 +1,7 @@
-# -smart-diabetes-detection
-Sure! Here’s an extended description for your **"Smart Diabetes Detection"** project that you can use for GitHub:
+# Track-diabetes
 
----
 
-### **Smart Diabetes Detection Using Machine Learning**
+### **Track-diabetes Detection Using Machine Learning**
 
 This project leverages machine learning techniques to predict and diagnose diabetes based on various patient health metrics. By analyzing key features such as age, BMI, blood pressure, glucose levels, and family history, the model classifies individuals into two categories: **diabetic** or **non-diabetic**.
 
